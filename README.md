@@ -44,6 +44,7 @@ BERT4Rec mitigates the limitations of traditional sequential models by employing
 ##  Features
 
 Bert4Rec on the MovieLens 1M dataset
+The dataset is available here: https://grouplens.org/datasets/movielens/
 
 ---
 
