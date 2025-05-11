@@ -87,8 +87,17 @@ Install bert4rec_A2 using one of the following methods:
 
 ###  Usage
 Run bert4rec_A2 using the following command:
-echo 'INSERT-RUN-COMMAND-HERE'
+```sh
+python BERT4Rec.py
+```
+This will execute the full pipeline:
 
+Pre-training with the Cloze-style objective using random masking
+
+Fine-tuning for next-item prediction (masking only the final item)
+
+Evaluation using Recall@10 and NDCG@10 with a re-ranking strategy (99 negative samples + 1 positive)
+You can modify model architecture, training parameters, or masking strategy by editing BERT4Rec.py
 
 ---
 ##  Project Roadmap
