@@ -23,12 +23,11 @@
 - [ Overview](#-overview)
 - [ Features](#-features)
 - [ Project Structure](#-project-structure)
-  - [ Project Index](#-project-index)
 - [ Getting Started](#-getting-started)
   - [ Prerequisites](#-prerequisites)
   - [ Installation](#-installation)
   - [ Usage](#-usage)
-  - [ Testing](#-testing)
+
 - [ Project Roadmap](#-project-roadmap)
 - [ Contributing](#-contributing)
 - [ License](#-license)
@@ -38,13 +37,13 @@
 
 ##  Overview
 
-<code>❯ REPLACE-ME</code>
+BERT4Rec mitigates the limitations of traditional sequential models by employing Transformer encoders with a Masked Language Modeling (MLM) objective. In this project, we implement BERT4Rec using PyTorch and train it on the MovieLens 1M dataset. We construct fixed-length user sequences from positive interactions (ratings $\geq$ 4). The model uses item and positional embeddings, followed by a multi-layer Transformer encoder. Prediction is performed via a softmax over the item vocabulary. Training minimizes cross-entropy loss using the Adam optimizer with learning rate scheduling, and early stopping based on NDCG@10 in the validation set. Evaluation metrics include Recall@10 and NDCG@10 using a re-ranking strategy with 99 negative samples per ground truth item.
 
 ---
 
 ##  Features
 
-<code>❯ REPLACE-ME</code>
+Bert4Rec on the MovieLens 1M dataset
 
 ---
 
@@ -56,21 +55,6 @@
 ```
 
 
-###  Project Index
-<details open>
-	<summary><b><code>BERT4REC_A2/</code></b></summary>
-	<details> <!-- __root__ Submodule -->
-		<summary><b>__root__</b></summary>
-		<blockquote>
-			<table>
-			<tr>
-				<td><b><a href='https://github.com/LI-SUJU/bert4rec_A2/blob/master/BERT4Rec.py'>BERT4Rec.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
-			</tr>
-			</table>
-		</blockquote>
-	</details>
-</details>
 
 ---
 ##  Getting Started
@@ -98,9 +82,6 @@ Install bert4rec_A2 using one of the following methods:
 ❯ cd bert4rec_A2
 ```
 
-3. Install the project dependencies:
-
-echo 'INSERT-INSTALL-COMMAND-HERE'
 
 
 
@@ -108,9 +89,6 @@ echo 'INSERT-INSTALL-COMMAND-HERE'
 Run bert4rec_A2 using the following command:
 echo 'INSERT-RUN-COMMAND-HERE'
 
-###  Testing
-Run the test suite using the following command:
-echo 'INSERT-TEST-COMMAND-HERE'
 
 ---
 ##  Project Roadmap
