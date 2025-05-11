@@ -51,7 +51,12 @@ Bert4Rec on the MovieLens 1M dataset
 
 ```sh
 └── bert4rec_A2/
-    └── BERT4Rec.py
+    ├── BERT4Rec.py           # Main training and evaluation script
+    └── data/                 # Folder containing the MovieLens 1M dataset
+        ├── ratings.dat       # User-Movie rating records
+        ├── movies.dat        # Movie metadata (e.g., titles, genres)
+        ├── users.dat         # User metadata (e.g., age, gender, occupation)
+        └── ...               # Other relevant files if needed
 ```
 
 
